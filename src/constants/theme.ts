@@ -6,6 +6,7 @@ export const Colors = {
   light: {
     background: "#FAF9FD",
     primary: "#6750A4",
+    onPrimary: "#FFFFFF",
     text: "#252330",
     textSecondary: "#716C7D",
     backgroundElement: "#F0F0F3",
@@ -17,6 +18,7 @@ export const Colors = {
   dark: {
     background: "#141218",
     primary: "#D0BCFF",
+    onPrimary: "#381E72",
     text: "#FFFFFF",
     textSecondary: "#B0B4BA",
     backgroundElement: "#212225",
