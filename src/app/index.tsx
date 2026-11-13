@@ -2,7 +2,7 @@ import { useTheme } from "@/hooks/use-theme";
 import { StyleSheet } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
-import { Header } from "@/components";
+import { Header, TodoList } from "@/components";
 
 export default function HomeScreen() {
   const colors = useTheme();
@@ -13,6 +13,7 @@ export default function HomeScreen() {
       edges={["top", "left", "right"]}
     >
       <Header />
+      <TodoList />
     </SafeAreaView>
   );
 }

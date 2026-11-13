@@ -9,6 +9,9 @@ export const Colors = {
     text: "#252330",
     textSecondary: "#716C7D",
     backgroundElement: "#F0F0F3",
+    backgroundCard: "#FFFFFF",
+    borderCard: "#EAE6EF",
+    checkboxBorder: "#49454F",
     backgroundSelected: "#E0E1E6",
   },
   dark: {
@@ -17,6 +20,9 @@ export const Colors = {
     text: "#FFFFFF",
     textSecondary: "#B0B4BA",
     backgroundElement: "#212225",
+    backgroundCard: "#212225",
+    borderCard: "#49454F",
+    checkboxBorder: "#CAC4D0",
     backgroundSelected: "#2E3135",
   },
 } as const;
