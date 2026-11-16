@@ -46,6 +46,5 @@ const styles = StyleSheet.create({
   container: {
     display: "flex",
     rowGap: 10,
-    backgroundColor: "green",
   },
 });

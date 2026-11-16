@@ -1,6 +1,7 @@
 import { useTheme } from "@/hooks/use-theme";
 import { StyleSheet, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
+import { router } from "expo-router";
 
 import { Header, TodoList } from "@/components";
 import { Button } from "@/components/ui";
@@ -16,7 +17,10 @@ export default function HomeScreen() {
       <Header />
       <TodoList />
       <View style={styles.actions}>
-        <Button text="+ Додати задачу" />
+        <Button
+          text="+ Додати задачу"
+          onPress={() => router.push("/add-task")}
+        />
       </View>
     </SafeAreaView>
   );
