@@ -1,13 +1,19 @@
 import { useTheme } from "@/hooks/use-theme";
-import { Pressable, StyleSheet, Text } from "react-native";
+import {
+  Pressable,
+  StyleSheet,
+  Text,
+  StyleProp,
+  ViewStyle,
+} from "react-native";
 
-export const Button = ({
-  text,
-  onPress,
-}: {
+interface ButtonProps {
   text: string;
   onPress: () => void;
-}) => {
+  style?: StyleProp<ViewStyle>;
+}
+
+export const Button = ({ text, onPress, style }: ButtonProps) => {
   const colors = useTheme();
 
   return (
@@ -18,6 +24,7 @@ export const Button = ({
         styles.button,
         { backgroundColor: colors.primary },
         pressed && styles.pressed,
+        style,
       ]}
     >
       <Text style={[styles.text, { color: colors.onPrimary }]}>{text}</Text>

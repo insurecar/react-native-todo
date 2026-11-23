@@ -1,6 +1,8 @@
 import { useTheme } from "@/hooks/use-theme";
 import { StyleSheet, Text, View } from "react-native";
 
+import { Title, SubTitle } from "../ui";
+
 export const Header = () => {
   const colors = useTheme();
 
@@ -9,10 +11,8 @@ export const Header = () => {
       <Text style={[styles.eyebrow, { color: colors.primary }]}>
         Трохи щодня
       </Text>
-      <Text style={[styles.title, { color: colors.text }]}>Мої задачі</Text>
-      <Text style={[styles.subtitle, { color: colors.textSecondary }]}>
-        Звільни голову для важливого
-      </Text>
+      <Title size="l" text="Мої задачі" />
+      <SubTitle size="l" text="Звільни голову для важливого." />
     </View>
   );
 };
@@ -24,11 +24,6 @@ const styles = StyleSheet.create({
   },
   eyebrow: {
     fontSize: 11,
-  },
-  title: {
-    fontSize: 32,
-    fontWeight: "bold",
-    marginVertical: 5,
   },
   subtitle: {
     fontSize: 16,
